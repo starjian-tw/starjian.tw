@@ -1,0 +1,104 @@
+baseURL = "https://starjian.tw/"
+languageCode = "zh-tw"
+defaultContentLanguage = "zh-tw"
+title = "星鑑｜有據可鑑的紫微斗數"
+theme = "PaperMod"
+hasCJKLanguage = true
+enableRobotsTXT = true
+timeZone = "Asia/Taipei"
+enableEmoji = false
+disableHugoGeneratorInject = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  description = "星鑑科技工作室的紫微斗數筆記：查判語出處、比較派別差異、把不確定的地方留下來。"
+  author = "星鑑科技工作室"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowToc = true
+  TocOpen = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  disableSpecial1stPost = true
+  hideSummary = false
+  comments = false
+
+  [params.label]
+    text = "星鑑"
+    icon = "/images/badge.png"
+    iconHeight = 32
+
+  [params.assets]
+    favicon = "/images/badge.png"
+    apple_touch_icon = "/images/badge.png"
+    disableHLJS = true
+
+  [params.homeInfoParams]
+    Title = "星鑑"
+    Content = """
+我在做一套紫微斗數軟體，叫「星鑑」。
+
+這裡放查書筆記、派別差異，和還沒想明白的地方。畫面上每一句判語，都應該找得到是從哪裡來的。
+
+Threads：[@starjian.tw](https://www.threads.com/@starjian.tw)
+"""
+
+  [[params.socialIcons]]
+    name = "threads"
+    title = "Threads"
+    url = "https://www.threads.com/@starjian.tw"
+
+  [[params.socialIcons]]
+    name = "rss"
+    title = "RSS"
+    url = "/index.xml"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "關於"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "privacy"
+    name = "隱私聲明"
+    url = "/privacy/"
+    weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.x]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[services]
+  [services.googleAnalytics]
+    id = ""
