@@ -36,8 +36,10 @@ disableHugoGeneratorInject = true
     iconHeight = 32
 
   [params.assets]
-    favicon = "/images/badge.png"
-    apple_touch_icon = "/images/badge.png"
+    favicon = "/images/favicon.png"
+    favicon16x16 = "/images/favicon.png"
+    favicon32x32 = "/images/favicon.png"
+    apple_touch_icon = "/images/apple-touch-icon.png"
     disableHLJS = true
 
   [params.homeInfoParams]
