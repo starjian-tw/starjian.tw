@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" role="img" aria-label="十二宮方位圖：機巨同宮只會出現在卯宮或酉宮，古書對兩宮評價不同">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .cell { fill: #f5efe3; stroke: #c9a961; stroke-width: 2; }
+    .cell-hi { fill: #1f4a3f; stroke: #c9a961; stroke-width: 3; }
+    .cell-lo { fill: #7a6a55; stroke: #c9a961; stroke-width: 3; }
+    .branch { font-size: 30px; fill: #1f4a3f; font-weight: 700; }
+    .branch-w { font-size: 30px; fill: #f5efe3; font-weight: 700; }
+    .note { font-size: 17px; fill: #f5efe3; }
+    .center { font-size: 22px; fill: #1f4a3f; font-weight: 700; }
+    .center-s { font-size: 16px; fill: #4a4a4a; }
+    .cap { font-size: 15px; fill: #6b6b6b; }
+  </style>
+  <rect x="0" y="0" width="800" height="640" fill="#ffffff"/>
+  <!-- 4x4 grid, cell 150, origin (100,40) -->
+  <!-- row 1: 巳 午 未 申 -->
+  <rect class="cell" x="100" y="40" width="150" height="130"/><text class="branch" x="175" y="115" text-anchor="middle">巳</text>
+  <rect class="cell" x="250" y="40" width="150" height="130"/><text class="branch" x="325" y="115" text-anchor="middle">午</text>
+  <rect class="cell" x="400" y="40" width="150" height="130"/><text class="branch" x="475" y="115" text-anchor="middle">未</text>
+  <rect class="cell" x="550" y="40" width="150" height="130"/><text class="branch" x="625" y="115" text-anchor="middle">申</text>
+  <!-- row 2: 辰 [center] 酉 -->
+  <rect class="cell" x="100" y="170" width="150" height="130"/><text class="branch" x="175" y="245" text-anchor="middle">辰</text>
+  <rect class="cell-lo" x="550" y="170" width="150" height="130"/>
+  <text class="branch-w" x="625" y="220" text-anchor="middle">酉</text>
+  <text class="note" x="625" y="252" text-anchor="middle">機巨同宮</text>
+  <text class="note" x="625" y="276" text-anchor="middle">「雖美無始終」</text>
+  <!-- row 3: 卯 [center] 戌 -->
+  <rect class="cell-hi" x="100" y="300" width="150" height="130"/>
+  <text class="branch-w" x="175" y="350" text-anchor="middle">卯</text>
+  <text class="note" x="175" y="382" text-anchor="middle">機巨同宮</text>
+  <text class="note" x="175" y="406" text-anchor="middle">「巨機為貴格」</text>
+  <rect class="cell" x="550" y="300" width="150" height="130"/><text class="branch" x="625" y="375" text-anchor="middle">戌</text>
+  <!-- row 4: 寅 丑 子 亥 -->
+  <rect class="cell" x="100" y="430" width="150" height="130"/><text class="branch" x="175" y="505" text-anchor="middle">寅</text>
+  <rect class="cell" x="250" y="430" width="150" height="130"/><text class="branch" x="325" y="505" text-anchor="middle">丑</text>
+  <rect class="cell" x="400" y="430" width="150" height="130"/><text class="branch" x="475" y="505" text-anchor="middle">子</text>
+  <rect class="cell" x="550" y="430" width="150" height="130"/><text class="branch" x="625" y="505" text-anchor="middle">亥</text>
+  <!-- center -->
+  <rect x="250" y="170" width="300" height="260" fill="#ffffff" stroke="#c9a961" stroke-width="1" stroke-dasharray="6 5"/>
+  <text class="center" x="400" y="270" text-anchor="middle">天機、巨門同宮</text>
+  <text class="center" x="400" y="302" text-anchor="middle">只會出現在卯或酉</text>
+  <text class="center-s" x="400" y="345" text-anchor="middle">同一組星，兩個宮位，</text>
+  <text class="center-s" x="400" y="370" text-anchor="middle">《全書》給的評價相反</text>
+  <text class="cap" x="400" y="605" text-anchor="middle">圖 1｜十二宮以命盤慣用排列繪製；引號內為《紫微斗數全書》卷一、卷二用語（節錄）。</text>
+</svg>

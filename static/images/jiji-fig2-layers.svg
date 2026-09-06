@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" aria-label="本命、大限、流年三層：古書判語多針對本命，套到大限要打折">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .t1 { font-size: 26px; font-weight: 700; }
+    .t2 { font-size: 17px; }
+    .cap { font-size: 15px; fill: #6b6b6b; }
+    .tag { font-size: 15px; fill: #1f4a3f; font-weight: 700; }
+  </style>
+  <rect x="0" y="0" width="800" height="460" fill="#ffffff"/>
+  <!-- layer 3: 流年 (top, small) -->
+  <rect x="250" y="40" width="300" height="80" rx="14" fill="#f5efe3" stroke="#c9a961" stroke-width="2"/>
+  <text class="t1" x="400" y="74" text-anchor="middle" fill="#1f4a3f">流年</text>
+  <text class="t2" x="400" y="102" text-anchor="middle" fill="#4a4a4a">一年的天氣</text>
+  <!-- layer 2: 大限 (middle) -->
+  <rect x="160" y="140" width="480" height="100" rx="14" fill="#c9a961" stroke="#b08d3e" stroke-width="2"/>
+  <text class="t1" x="400" y="181" text-anchor="middle" fill="#1f2a26">大限</text>
+  <text class="t2" x="400" y="212" text-anchor="middle" fill="#1f2a26">十年的環境與主題　←　這篇談的是這一層</text>
+  <!-- layer 1: 本命 (bottom, wide) -->
+  <rect x="70" y="260" width="660" height="110" rx="14" fill="#1f4a3f" stroke="#163830" stroke-width="2"/>
+  <text class="t1" x="400" y="305" text-anchor="middle" fill="#f5efe3">本命</text>
+  <text class="t2" x="400" y="338" text-anchor="middle" fill="#f5efe3">一個人的底子　←　古書「安命於卯／酉」的判語講的是這一層</text>
+  <!-- side note -->
+  <text class="tag" x="70" y="410">把本命的判語拿到大限用，各派都在做；但底子 ≠ 環境，強度要打折。</text>
+  <text class="cap" x="400" y="445" text-anchor="middle">圖 2｜三層只是為了說明尺度，不是任何派別的正式分類。</text>
+</svg>

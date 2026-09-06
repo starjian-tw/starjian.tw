@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" aria-label="天機負責分析與結構、巨門負責表達與研究，合起來的出口是文件、示範、工具、教學">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .star { font-size: 28px; font-weight: 700; fill: #f5efe3; }
+    .star-s { font-size: 16px; fill: #f5efe3; }
+    .box { fill: #f5efe3; stroke: #c9a961; stroke-width: 2; }
+    .box-t { font-size: 20px; font-weight: 700; fill: #1f4a3f; }
+    .box-s { font-size: 14px; fill: #4a4a4a; }
+    .mid { font-size: 18px; fill: #1f4a3f; font-weight: 700; }
+    .cap { font-size: 15px; fill: #6b6b6b; }
+    .arrow { stroke: #c9a961; stroke-width: 3; fill: none; marker-end: url(#ah); }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c9a961"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="800" height="460" fill="#ffffff"/>
+  <!-- two stars -->
+  <circle cx="150" cy="130" r="78" fill="#1f4a3f"/>
+  <text class="star" x="150" y="122" text-anchor="middle">天機</text>
+  <text class="star-s" x="150" y="150" text-anchor="middle">分析・規劃・結構</text>
+  <circle cx="150" cy="320" r="78" fill="#7a6a55"/>
+  <text class="star" x="150" y="312" text-anchor="middle">巨門</text>
+  <text class="star-s" x="150" y="340" text-anchor="middle">表達・研究・說明</text>
+  <!-- merge -->
+  <path class="arrow" d="M 228 150 C 300 190, 300 210, 350 225"/>
+  <path class="arrow" d="M 228 300 C 300 260, 300 240, 350 225"/>
+  <text class="mid" x="410" y="205" text-anchor="middle">把解得開的問題</text>
+  <text class="mid" x="410" y="230" text-anchor="middle">整理成別人用得懂的東西</text>
+  <text class="mid" x="410" y="255" text-anchor="middle">→</text>
+  <!-- outlets -->
+  <rect class="box" x="560" y="40" width="200" height="80" rx="12"/>
+  <text class="box-t" x="660" y="74" text-anchor="middle">文件</text>
+  <text class="box-s" x="660" y="100" text-anchor="middle">把口頭解釋寫下來</text>
+  <rect class="box" x="560" y="140" width="200" height="80" rx="12"/>
+  <text class="box-t" x="660" y="174" text-anchor="middle">示範</text>
+  <text class="box-s" x="660" y="200" text-anchor="middle">讓人看到它怎麼運作</text>
+  <rect class="box" x="560" y="240" width="200" height="80" rx="12"/>
+  <text class="box-t" x="660" y="274" text-anchor="middle">工具</text>
+  <text class="box-s" x="660" y="300" text-anchor="middle">一次性的判斷變成可重複的</text>
+  <rect class="box" x="560" y="340" width="200" height="80" rx="12"/>
+  <text class="box-t" x="660" y="374" text-anchor="middle">教學</text>
+  <text class="box-s" x="660" y="400" text-anchor="middle">回答問題、帶人上手</text>
+  <path class="arrow" d="M 470 230 C 520 230, 520 80, 555 80"/>
+  <path class="arrow" d="M 470 230 C 520 230, 520 180, 555 180"/>
+  <path class="arrow" d="M 470 230 C 520 230, 520 280, 555 280"/>
+  <path class="arrow" d="M 470 230 C 520 230, 520 380, 555 380"/>
+  <text class="cap" x="400" y="445" text-anchor="middle">圖 3｜象義放進工程背景後的作者推論，不是古籍引文。</text>
+</svg>
