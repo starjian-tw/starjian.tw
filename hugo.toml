@@ -15,6 +15,7 @@ disableHugoGeneratorInject = true
 [params]
   env = "production"
   description = "星鑑科技工作室的紫微斗數筆記：查判語出處、比較派別差異、把不確定的地方留下來。"
+  images = ["/images/og.png"]
   author = "星鑑科技工作室"
   defaultTheme = "auto"
   ShowReadingTime = true
