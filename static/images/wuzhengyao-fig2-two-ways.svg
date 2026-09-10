@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="兩種做法對照。上半借星安宮：把對宮的主星連同煞星整組搬進命宮，實測命宮無正曜的盤有四成二對宮本來就帶煞。下半看三方：命宮維持空著，由對宮與三合的財帛官祿兩宮照過來，空格始終是空的。">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .h  { font-size: 21px; font-weight: 700; }
+    .t2 { font-size: 16px; }
+    .sm { font-size: 14px; }
+    .num{ font-size: 15px; font-weight: 700; }
+    .cap{ font-size: 14px; fill: #6b6b6b; }
+    .src{ font-size: 13px; fill: #8a6a24; }
+  </style>
+  <rect x="0" y="0" width="800" height="560" fill="#ffffff"/>
+
+  <!-- 上半：借星安宮 -->
+  <text class="h" x="40" y="46" fill="#1f4a3f">借星安宮</text>
+  <text class="src" x="40" y="70">今人的操作法・語料庫 4,826 句查無「借星」「借宮」</text>
+
+  <rect x="40" y="92" width="150" height="96" rx="4" fill="#f0ece0" stroke="#c9a961" stroke-width="2"/>
+  <text class="t2" x="115" y="124" text-anchor="middle" fill="#4a4a4a">對宮</text>
+  <text class="t2" x="115" y="150" text-anchor="middle" fill="#1f4a3f">主星</text>
+  <text class="sm" x="115" y="173" text-anchor="middle" fill="#a8552f">＋煞星</text>
+
+  <path d="M 198 140 L 240 140" fill="none" stroke="#c9a961" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 250 140 L 232 130 L 232 150 Z" fill="#c9a961"/>
+  <text class="sm" x="224" y="122" text-anchor="middle" fill="#8a6a24">整組搬</text>
+
+  <rect x="256" y="92" width="150" height="96" rx="4" fill="#1f4a3f" stroke="#163830" stroke-width="2"/>
+  <text class="t2" x="331" y="124" text-anchor="middle" fill="#f5efe3">命宮</text>
+  <text class="t2" x="331" y="150" text-anchor="middle" fill="#f5efe3">借來的主星</text>
+  <text class="sm" x="331" y="173" text-anchor="middle" fill="#e0855c">＋借來的煞</text>
+
+  <text class="num" x="446" y="128" fill="#a8552f">42.19%</text>
+  <text class="t2" x="518" y="128" fill="#4a4a4a">的人，對宮本來就帶煞</text>
+  <text class="sm" x="446" y="154" fill="#6b6b6b">「副星小星煞星一併借過來」是這個做法</text>
+  <text class="sm" x="446" y="174" fill="#6b6b6b">自己的規矩，四成的人都會碰到。</text>
+
+  <line x1="40" y1="222" x2="760" y2="222" stroke="#ded7c6" stroke-width="1"/>
+
+  <!-- 下半：看三方 -->
+  <text class="h" x="40" y="262" fill="#1f4a3f">看三方</text>
+  <text class="src" x="40" y="286">《全書》卷三〈談星要論〉：無正曜吉星，三方有吉，上次之命</text>
+
+  <!-- 對宮（上） -->
+  <rect x="325" y="310" width="150" height="56" rx="4" fill="#f0ece0" stroke="#c9a961" stroke-width="2"/>
+  <text class="t2" x="400" y="345" text-anchor="middle" fill="#1f4a3f">對宮・遷移</text>
+
+  <!-- 命宮（空，中） -->
+  <rect x="325" y="424" width="150" height="86" rx="4" fill="#ffffff"
+        stroke="#c9a961" stroke-width="3" stroke-dasharray="7 5"/>
+  <text class="t2" x="400" y="460" text-anchor="middle" fill="#8a6a24">命宮</text>
+  <text class="sm" x="400" y="486" text-anchor="middle" fill="#8a6a24">維持空著</text>
+
+  <!-- 三合兩宮（左右） -->
+  <rect x="40" y="438" width="140" height="58" rx="4" fill="#f0ece0" stroke="#c9a961" stroke-width="2"/>
+  <text class="t2" x="110" y="466" text-anchor="middle" fill="#1f4a3f">財帛・三合</text>
+  <rect x="620" y="438" width="140" height="58" rx="4" fill="#f0ece0" stroke="#c9a961" stroke-width="2"/>
+  <text class="t2" x="690" y="466" text-anchor="middle" fill="#1f4a3f">官祿・三合</text>
+
+  <!-- 三個方向照過來 -->
+  <g stroke="#1f4a3f" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M 400 372 L 400 406"/>
+    <path d="M 186 467 L 307 467"/>
+    <path d="M 614 467 L 493 467"/>
+  </g>
+  <path d="M 400 418 L 390 396 L 410 396 Z" fill="#1f4a3f"/>
+  <path d="M 319 467 L 301 457 L 301 477 Z" fill="#1f4a3f"/>
+  <path d="M 481 467 L 499 457 L 499 477 Z" fill="#1f4a3f"/>
+
+  <text class="cap" x="400" y="538" text-anchor="middle">空的那一格始終是空的；照過來的力量記在照過來那一欄。對宮同樣參看，但不搬進來。</text>
+</svg>

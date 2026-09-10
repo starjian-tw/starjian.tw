@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" aria-label="全書卷三談星要論的命宮分級：有正曜吉星且三方有吉為上上之命；無正曜吉星但三方有吉為上次之命；無吉無凶而三方中等為中格。命宮沒有主星在書上不是最差的一級。">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .h  { font-size: 25px; font-weight: 700; }
+    .tier{ font-size: 21px; font-weight: 700; }
+    .t2 { font-size: 16px; }
+    .q  { font-size: 15px; }
+    .cap{ font-size: 14px; fill: #6b6b6b; }
+  </style>
+  <rect x="0" y="0" width="800" height="460" fill="#ffffff"/>
+
+  <text class="h" x="60" y="56" fill="#1f4a3f">書上自己有分級</text>
+  <text class="t2" x="60" y="86" fill="#4a4a4a">《紫微斗數全書》卷三〈談星要論〉，原文順序照抄</text>
+
+  <!-- 上上 -->
+  <rect x="60" y="112" width="680" height="76" rx="4" fill="#1f4a3f" stroke="#163830" stroke-width="2"/>
+  <text class="tier" x="86" y="146" fill="#c9a961">上上之命</text>
+  <text class="q" x="230" y="143" fill="#f5efe3">「如命宮有正曜吉星，廟旺化吉，三方又有吉星會合」</text>
+  <text class="t2" x="230" y="170" fill="#f5efe3">有主星，而且三方也有吉</text>
+
+  <!-- 上次 -->
+  <rect x="60" y="200" width="680" height="76" rx="4" fill="#f0ece0" stroke="#c9a961" stroke-width="3"/>
+  <text class="tier" x="86" y="234" fill="#8a6a24">上次之命</text>
+  <text class="q" x="230" y="231" fill="#1f4a3f">「如無正曜吉星，三方有吉」</text>
+  <text class="t2" x="230" y="258" fill="#4a4a4a">沒有主星，但三方有吉　←　命宮空的那一格落在這裡</text>
+
+  <!-- 中格 -->
+  <rect x="60" y="288" width="680" height="76" rx="4" fill="#ffffff" stroke="#ded7c6" stroke-width="2"/>
+  <text class="tier" x="86" y="322" fill="#6b7570">中格</text>
+  <text class="q" x="230" y="319" fill="#4a4a4a">「命宮星辰無吉無凶，或吉凶相伴者，如三方亦有中等星辰」</text>
+  <text class="t2" x="230" y="346" fill="#6b7570">吉凶都不明顯，三方也普通</text>
+
+  <text class="t2" x="60" y="400" fill="#1f4a3f">同一本書另有一句最重的話：「命無正曜，夭折孤貧」（卷一〈斗數骨髓賦〉）。</text>
+  <text class="cap" x="60" y="428">那是最壞的情況，不是唯一的情況 —— 上面三級就是書自己給的條件。只挑最重的一句讀，</text>
+  <text class="cap" x="60" y="448">是把有條件的讀成無條件。</text>
+</svg>

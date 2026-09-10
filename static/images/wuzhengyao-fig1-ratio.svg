@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" aria-label="六個方格代表六個人，其中一格是空的，代表命宮沒有主星。實測三萬張盤，命宮無正曜佔百分之十六點二二，逼近結構常數六分之一。">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .h  { font-size: 27px; font-weight: 700; }
+    .big{ font-size: 58px; font-weight: 700; letter-spacing: .01em; }
+    .t2 { font-size: 17px; }
+    .lb { font-size: 15px; }
+    .cap{ font-size: 14px; fill: #6b6b6b; }
+  </style>
+  <rect x="0" y="0" width="800" height="460" fill="#ffffff"/>
+
+  <text class="h" x="60" y="66" fill="#1f4a3f">每六個人，就有一個</text>
+  <text class="t2" x="60" y="98" fill="#4a4a4a">命宮那一格，十四顆主星一顆都沒有</text>
+
+  <!-- 六格：前五格有主星，第六格空 -->
+  <g>
+    <rect x="60"  y="140" width="106" height="106" rx="4" fill="#1f4a3f" stroke="#163830" stroke-width="2"/>
+    <circle cx="98"  cy="182" r="7" fill="#f5efe3"/><circle cx="128" cy="196" r="7" fill="#f5efe3"/>
+    <rect x="182" y="140" width="106" height="106" rx="4" fill="#1f4a3f" stroke="#163830" stroke-width="2"/>
+    <circle cx="222" cy="190" r="7" fill="#f5efe3"/>
+    <rect x="304" y="140" width="106" height="106" rx="4" fill="#1f4a3f" stroke="#163830" stroke-width="2"/>
+    <circle cx="340" cy="180" r="7" fill="#f5efe3"/><circle cx="372" cy="200" r="7" fill="#f5efe3"/>
+    <rect x="426" y="140" width="106" height="106" rx="4" fill="#1f4a3f" stroke="#163830" stroke-width="2"/>
+    <circle cx="466" cy="192" r="7" fill="#f5efe3"/>
+    <rect x="548" y="140" width="106" height="106" rx="4" fill="#1f4a3f" stroke="#163830" stroke-width="2"/>
+    <circle cx="584" cy="182" r="7" fill="#f5efe3"/><circle cx="616" cy="198" r="7" fill="#f5efe3"/>
+    <!-- 第六格：空 -->
+    <rect x="670" y="140" width="106" height="106" rx="4" fill="#ffffff"
+          stroke="#c9a961" stroke-width="3" stroke-dasharray="7 5"/>
+  </g>
+  <text class="lb" x="723" y="272" text-anchor="middle" fill="#8a6a24">命宮無正曜</text>
+
+  <text class="big" x="60" y="352" fill="#1f4a3f">16.22<tspan class="h" fill="#8a6a24">%</tspan></text>
+  <text class="t2" x="60" y="384" fill="#4a4a4a">實測 30,000 張隨機生辰（1930–2010 年 × 十三時辰 × 男女）</text>
+  <text class="t2" x="60" y="410" fill="#8a6a24">逼近的是安星法的結構常數：六分之一</text>
+
+  <text class="cap" x="60" y="444">這不是排錯，也不罕見：主星十四顆、宮位十二個，而主星會擠在一起，空格是結構本身留下的。</text>
+</svg>
