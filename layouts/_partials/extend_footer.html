@@ -1,0 +1,34 @@
+<script>
+/* 星鑑私人流量計數：頁面上不顯示任何東西；不用 cookie、不記 IP、不發訪客編號。
+   站長自己的瀏覽器開一次 https://starjian.tw/?notrack=1 就不再計數（?notrack=0 取消）。 */
+(function () {
+  var EP = "https://script.google.com/macros/s/AKfycbyy9EadBPIhcKUm_0syezkgV8ZNqavtJNxpEoXD_mxB8Eg7SV-mGZm0feFtgkddRH3L/exec", HOST = "starjian.tw";
+  if (location.hostname !== HOST || EP.indexOf("__") === 0) return;
+  var q = new URLSearchParams(location.search), mine = false;
+  try {
+    if (q.has("notrack")) localStorage.setItem("sj_notrack", q.get("notrack") === "0" ? "0" : "1");
+    mine = localStorage.getItem("sj_notrack") === "1";
+  } catch (e) {}
+  var src = q.get("from") || q.get("utm_source") || "";
+  ["from", "notrack", "utm_source", "utm_medium", "utm_campaign"].forEach(function (k) { q.delete(k); });
+  if (location.search && history.replaceState) {
+    var s = q.toString();
+    history.replaceState(history.state, "", location.pathname + (s ? "?" + s : "") + location.hash);
+  }
+  if (mine || navigator.webdriver || /bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent)) return;
+  var ref = "";
+  try { ref = document.referrer ? new URL(document.referrer).hostname : ""; } catch (e) {}
+  var inside = ref === location.hostname;
+  var data = JSON.stringify({
+    p: location.pathname, t: document.title.slice(0, 150),
+    r: inside ? "" : ref, s: src.slice(0, 40),
+    m: matchMedia("(max-width: 768px)").matches ? 1 : 0, e: inside ? 0 : 1
+  });
+  function send() {
+    if (navigator.sendBeacon && navigator.sendBeacon(EP, data)) return;
+    try { fetch(EP, { method: "POST", body: data, mode: "no-cors", keepalive: true }); } catch (e) {}
+  }
+  if (document.prerendering) document.addEventListener("prerenderingchange", send, { once: true });
+  else send();
+})();
+</script>
