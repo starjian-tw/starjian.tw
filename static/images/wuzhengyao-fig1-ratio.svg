@@ -31,7 +31,7 @@
   <text class="lb" x="723" y="272" text-anchor="middle" fill="#8a6a24">命宮無正曜</text>
 
   <text class="big" x="60" y="352" fill="#1f4a3f">16.22<tspan class="h" fill="#8a6a24">%</tspan></text>
-  <text class="t2" x="60" y="384" fill="#4a4a4a">實測 30,000 張隨機生辰（1930–2010 年 × 十三時辰 × 男女）</text>
+  <text class="t2" x="60" y="384" fill="#4a4a4a">實測 30,000 張隨機生辰（1930–2010 年 × 十二時辰〔子時分早晚，排盤共 13 格〕× 男女）</text>
   <text class="t2" x="60" y="410" fill="#8a6a24">逼近的是安星法的結構常數：六分之一</text>
 
   <text class="cap" x="60" y="444">這不是排錯，也不罕見：主星十四顆、宮位十二個，而主星會擠在一起，空格是結構本身留下的。</text>
