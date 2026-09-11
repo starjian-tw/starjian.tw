@@ -1,6 +1,7 @@
 <script>
 /* 星鑑私人流量計數：頁面上不顯示任何東西；不用 cookie、不記 IP、不發訪客編號。
-   站長自己的瀏覽器開一次 https://starjian.tw/?notrack=1 就不再計數（?notrack=0 取消）。 */
+   站長自己的瀏覽器開一次 https://starjian.tw/?notrack=1 就不再計數（?notrack=0 取消）；
+   訪客瀏覽器開 Global Privacy Control 或 Do Not Track 時一律不送。 */
 (function () {
   var EP = "https://script.google.com/macros/s/AKfycbyy9EadBPIhcKUm_0syezkgV8ZNqavtJNxpEoXD_mxB8Eg7SV-mGZm0feFtgkddRH3L/exec", HOST = "starjian.tw";
   if (location.hostname !== HOST || EP.indexOf("__") === 0) return;
@@ -15,6 +16,7 @@
     var s = q.toString();
     history.replaceState(history.state, "", location.pathname + (s ? "?" + s : "") + location.hash);
   }
+  if (navigator.globalPrivacyControl || navigator.doNotTrack === "1" || window.doNotTrack === "1") return;  /* 瀏覽器要求不追蹤就不記 */
   if (mine || navigator.webdriver || /bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent)) return;
   var ref = "";
   try { ref = document.referrer ? new URL(document.referrer).hostname : ""; } catch (e) {}
