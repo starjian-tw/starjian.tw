@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 740" width="800" height="740" role="img" aria-label="一張命盤上印著七個格局名，拿去比對《紫微斗數全書》三卷全文，書上真的找得到同名的只有兩個：君子在野（卷一諸星問答論、定貧賤局）與巨暗同垣（卷一重補斗數彀率）。另外五個書上沒有：巨火羊的原文作「巨火擎羊」、巨逢四煞是本軟體的工程名、巨鈴羊書上只有「丑巨鈴」講的不是這個、廉巨羊火書上另有「廉貞火巨忌星陷地同宮」所指不同、科權祿夾命書上作「科權祿拱」而拱是三合、夾是左右鄰宮。七個名字書上只有兩個。名字不是書上的，不等於說法錯，但要查就得知道查哪幾個字。">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .h  { font-size: 26px; font-weight: 700; }
+    .t2 { font-size: 16px; }
+    .sm { font-size: 14px; }
+    .st { font-size: 19px; font-weight: 700; }
+    .big{ font-size: 46px; font-weight: 700; }
+    .cap{ font-size: 13px; fill: #6b6b6b; }
+    .brand{ font-size: 13px; fill: #8a6a24; }
+    .b  { font-weight: 700; }
+    .gm { font-size: 18px; font-weight: 700; }
+    .bd { font-size: 15px; font-weight: 700; }
+    .hd { font-size: 15px; font-weight: 700; }
+  </style>
+  <rect x="0" y="0" width="800" height="740" fill="#ffffff"/>
+
+  <text class="h" x="40" y="54" fill="#1f4a3f">盤上七個格局名，書上找得到幾個？</text>
+  <text class="t2" x="40" y="84" fill="#4a4a4a">拿軟體印在盤面上的格名，逐個去查《紫微斗數全書》三卷全文</text>
+
+  <!-- 表頭 -->
+  <rect x="40" y="108" width="720" height="42" fill="#1f4a3f"/>
+  <text class="hd" x="64" y="135" fill="#c9a961">盤面印的格局名</text>
+  <text class="hd" x="274" y="135" fill="#c9a961">《全書》三卷裡有沒有這幾個字</text>
+
+  <!-- 七列 -->
+  <rect x="40" y="150" width="720" height="44" fill="#f3f6f2"/>
+  <text class="gm" x="64" y="178" fill="#1f4a3f">君子在野</text>
+  <rect x="274" y="160" width="40" height="24" rx="3" fill="#1f4a3f"/>
+  <text class="bd" x="294" y="177" text-anchor="middle" fill="#f5efe3">有</text>
+  <text class="t2" x="330" y="178" fill="#4a4a4a">卷一〈諸星問答論〉〈定貧賤局〉各一處</text>
+
+  <rect x="40" y="194" width="720" height="44" fill="#f9fbf8"/>
+  <text class="gm" x="64" y="222" fill="#1f4a3f">巨暗同垣</text>
+  <rect x="274" y="204" width="40" height="24" rx="3" fill="#1f4a3f"/>
+  <text class="bd" x="294" y="221" text-anchor="middle" fill="#f5efe3">有</text>
+  <text class="t2" x="330" y="222" fill="#4a4a4a">卷一〈重補斗數彀率〉</text>
+
+  <rect x="40" y="238" width="720" height="44" fill="#ffffff"/>
+  <text class="gm" x="64" y="266" fill="#8a6a24">巨火羊</text>
+  <rect x="274" y="248" width="40" height="24" rx="3" fill="#a8552f"/>
+  <text class="bd" x="294" y="265" text-anchor="middle" fill="#ffffff">無</text>
+  <text class="t2" x="330" y="266" fill="#4a4a4a">原文作「巨火<tspan class="b" fill="#a8552f">擎</tspan>羊」，少了一個字就查不到</text>
+
+  <rect x="40" y="282" width="720" height="44" fill="#faf8f2"/>
+  <text class="gm" x="64" y="310" fill="#8a6a24">巨逢四煞</text>
+  <rect x="274" y="292" width="40" height="24" rx="3" fill="#a8552f"/>
+  <text class="bd" x="294" y="309" text-anchor="middle" fill="#ffffff">無</text>
+  <text class="t2" x="330" y="310" fill="#4a4a4a">這是本軟體取的工程名；原文同一組也作「巨火擎羊」</text>
+
+  <rect x="40" y="326" width="720" height="44" fill="#ffffff"/>
+  <text class="gm" x="64" y="354" fill="#8a6a24">巨鈴羊</text>
+  <rect x="274" y="336" width="40" height="24" rx="3" fill="#a8552f"/>
+  <text class="bd" x="294" y="353" text-anchor="middle" fill="#ffffff">無</text>
+  <text class="t2" x="330" y="354" fill="#4a4a4a">書上只有「丑巨鈴」那一句，講的不是這個</text>
+
+  <rect x="40" y="370" width="720" height="44" fill="#faf8f2"/>
+  <text class="gm" x="64" y="398" fill="#8a6a24">廉巨羊火</text>
+  <rect x="274" y="380" width="40" height="24" rx="3" fill="#a8552f"/>
+  <text class="bd" x="294" y="397" text-anchor="middle" fill="#ffffff">無</text>
+  <text class="t2" x="330" y="398" fill="#4a4a4a">書上另有「廉貞火巨忌星陷地同宮」，所指不同</text>
+
+  <rect x="40" y="414" width="720" height="46" fill="#f0ece0" stroke="#c9a961" stroke-width="2"/>
+  <text class="gm" x="64" y="443" fill="#8a6a24">科權祿夾命</text>
+  <rect x="274" y="425" width="40" height="24" rx="3" fill="#a8552f"/>
+  <text class="bd" x="294" y="442" text-anchor="middle" fill="#ffffff">無</text>
+  <text class="t2" x="330" y="443" fill="#4a4a4a">書上作「科權祿<tspan class="b" fill="#a8552f">拱</tspan>」——拱是三合，夾是左右鄰宮</text>
+
+  <text class="sm" x="40" y="482" fill="#6b6b6b">最後這個是全盤唯一的吉格。</text>
+
+  <line x1="40" y1="500" x2="760" y2="500" stroke="#ded7c6" stroke-width="1"/>
+
+  <text class="big" x="40" y="562" fill="#1f4a3f">2</text>
+  <text class="st" x="76" y="560" fill="#4a4a4a">／ 7</text>
+  <text class="st" x="140" y="560" fill="#1f4a3f">七個名字，書上只有兩個。</text>
+
+  <text class="t2" x="40" y="600" fill="#4a4a4a">名字不是書上的，不代表這個說法錯——但你想自己查，就得先知道要查哪幾個字。</text>
+
+  <line x1="40" y1="622" x2="760" y2="622" stroke="#ded7c6" stroke-width="1"/>
+
+  <text class="cap" x="40" y="650">這張盤不是誰的命盤：把 1850–1901 每一天、十三個時辰、男女各排一張，共 493,792 張，這張是評分模型給分最低的。</text>
+  <text class="cap" x="40" y="670">比對範圍是《紫微斗數全書》三卷全文（本專案語料庫底本）。沒查到不等於一定沒有，只代表這個底本裡沒有。</text>
+  <text class="cap" x="40" y="690">「巨火擎羊」原文後半是講生死的斷語，本專案不轉述、軟體也不印。</text>
+  <text class="brand" x="760" y="722" text-anchor="end">星鑑｜紫微斗數筆記　starjian.tw</text>
+</svg>
