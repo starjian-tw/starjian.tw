@@ -1,0 +1,61 @@
+# 星鑑排盤 App 的外部健康監測（W3 計畫 §6.4）
+#
+# 每 30 分鐘打一次 app.starjian.tw/healthz。失敗時這個 workflow 會紅，GitHub 依帳號的
+# Actions 通知設定寄信給品牌信箱 —— 不必另開監測服務、不必新帳號。
+#
+# 為什麼是 30 分鐘而不是 5 分鐘：Render Free 閒置 15 分鐘會休眠，每次探測都會把它叫醒，
+# 那是監測的代價。30 分鐘一次大約用掉每月 750 免費時數的一半；5 分鐘一次（UptimeRobot 免費版
+# 的頻率）會讓服務整天醒著、幾乎吃光額度。
+#
+# ⚠ 兩件要留意：
+#   1. 探針**不帶任何生辰** —— 只打 /healthz。監測不是排盤（營運計畫 §5）。
+#   2. 公開 repo 的排程在 60 天沒有 commit 之後會被 GitHub 自動停用。站台若長期沒更新，
+#      到時要手動去 Actions 頁把它重新啟用。
+
+name: App uptime
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"     # 每 30 分鐘（UTC，與時區無關）
+  workflow_dispatch:            # 也可以手動按一次
+
+permissions:
+  contents: read
+
+concurrency:
+  group: uptime
+  cancel-in-progress: false
+
+jobs:
+  healthz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 打 /healthz（冷啟動最多等 90 秒）
+        run: |
+          set -o pipefail
+          # Free 方案休眠喚醒約一分鐘，所以 --max-time 給到 90 秒；
+          # 連線層失敗才重試（--retry-connrefused），HTTP 錯誤碼不重試——那是要讓它紅的。
+          code=$(curl -sS -o /tmp/body -w '%{http_code}' \
+                   --max-time 90 --retry 2 --retry-delay 10 --retry-connrefused \
+                   https://app.starjian.tw/healthz) || {
+            echo "::error::連不上 app.starjian.tw（DNS、憑證或服務整個掛了）"
+            exit 1
+          }
+          body=$(cat /tmp/body)
+          echo "HTTP $code / body: $body"
+          if [ "$code" != "200" ]; then
+            # 503 = 字型沒就緒或工作行程補不上來（W2 §3.2）；其他碼另查
+            echo "::error::/healthz 回 $code（200 才算健康；503 通常是字型未就緒或工作行程起不來）"
+            exit 1
+          fi
+          if [ "$body" != "ok" ]; then
+            echo "::error::/healthz 回 200 但內容是 '$body'，不是 'ok' —— 可能被中間層換掉了"
+            exit 1
+          fi
+
+      - name: 順手記下線上版本（出事時用來對帳）
+        run: |
+          v=$(curl -sS -o /dev/null -w '%header{x-app-version}' --max-time 60 \
+                https://app.starjian.tw/healthz || echo "取不到")
+          echo "線上版本：$v" >> "$GITHUB_STEP_SUMMARY"
