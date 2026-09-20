@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" aria-label="廉貞帶祿與自化忌的作者解讀示意：收入是否從人際往來取得，支出是否也來自同一段關係？兩條箭頭經過同一個開口。這是待核對的假設，不是已發生的結果或命盤。">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .t1 { font-size: 27px; font-weight: 700; }
+    .t2 { font-size: 17px; }
+    .lbl { font-size: 19px; font-weight: 700; }
+    .cap { font-size: 14px; fill: #6b6b6b; }
+    .tag { font-size: 16px; fill: #1f4a3f; font-weight: 700; }
+  </style>
+  <rect x="0" y="0" width="800" height="460" fill="#ffffff"/>
+
+  <!-- 進來：化祿（左上 → 缺口） -->
+  <text class="lbl" x="60" y="68" fill="#b08d3e">帶祿：觀察收入來源</text>
+  <text class="t2" x="60" y="96" fill="#4a4a4a">是否來自介紹、合作、往來？</text>
+  <path d="M 62 114 L 250 114 Q 340 114 372 192" fill="none" stroke="#c9a961"
+        stroke-width="5" stroke-linecap="round"/>
+  <path d="M 378 208 L 364 184 L 384 180 Z" fill="#c9a961"/>
+
+  <!-- 出去：自化忌（缺口 → 右上） -->
+  <text class="lbl" x="740" y="68" text-anchor="end" fill="#6b6b6b">自化忌：觀察支出關係</text>
+  <text class="t2" x="740" y="96" text-anchor="end" fill="#4a4a4a">是否也從同一段關係產生？</text>
+  <path d="M 424 204 Q 458 114 550 114 L 738 114" fill="none" stroke="#8a8a8a"
+        stroke-width="5" stroke-linecap="round"/>
+  <path d="M 738 114 L 718 104 L 718 124 Z" fill="#8a8a8a"/>
+
+  <!-- 宮位容器：上緣正中留一個缺口 (x 368–428)，兩條線正好由此進出 -->
+  <path d="M 368 210 L 230 210 L 230 340 L 570 340 L 570 210 L 428 210"
+        fill="#1f4a3f" stroke="#163830" stroke-width="3" stroke-linejoin="round"/>
+  <text class="t1" x="400" y="266" text-anchor="middle" fill="#f5efe3">財帛宮</text>
+  <text class="t2" x="400" y="298" text-anchor="middle" fill="#f5efe3">廉貞　次桃花．囚</text>
+  <text class="t2" x="400" y="324" text-anchor="middle" fill="#c9a961">帶祿 ＋ 宮干自化忌</text>
+
+  <text class="tag" x="400" y="378" text-anchor="middle">「同一個口進出」是作者用來追蹤收支的比喻。</text>
+  <text class="tag" x="400" y="404" text-anchor="middle">兩項標記並存，不是祿被消掉；能否留財仍待事實核對。</text>
+  <text class="cap" x="400" y="432" text-anchor="middle">圖 1｜概念示意，不是命盤或已驗證結果。</text>
+  <text class="cap" x="400" y="452" text-anchor="middle">本案尚無副業收入；宮位地支、廟陷與其他星曜不公開。</text>
+</svg>
