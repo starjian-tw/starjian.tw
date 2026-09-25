@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="800" height="900" role="img" aria-label="火鈴夾命在盤面上長什麼樣。夾，是火星、鈴星分在命宮前後兩宮，一邊一顆；最容易看錯的是轉角。左邊一張十二宮盤是古書注例：命宮在寅，火星在丑，鈴星在卯。寅在左下角，丑在它右邊，卯在它上面，畫面上不像左右夾，沿十二宮次序卻正好一前一後。右邊一張是轉錄本作寅申的申：命宮在右上角的申，夾它的是未和酉，不能沿用丑、卯那一組。中段數字：1902 到 2099 年每一天、十二時辰（子時分早晚，共 13 格）、男女各一張，共 1,880,294 張盤，火鈴夾命 39,476 張，約 2.1%，大約每 48 張有 1 張；這只回答多常見，不回答敗局準不準。自己查三步：找到命宮；沿十二宮次序找它前後緊鄰的兩宮，在轉角要轉彎；兩宮一邊一顆火星、鈴星才叫夾，坐命、會照都不算。結語：位置對了只是第一步，同一條小注還寫著吉多尚可。示意圖，非個人命盤。">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .h   { font-size: 26px; font-weight: 700; }
+    .t2  { font-size: 16px; }
+    .sm  { font-size: 14px; }
+    .st  { font-size: 19px; font-weight: 700; }
+    .big { font-size: 46px; font-weight: 700; }
+    .cap { font-size: 13px; fill: #6b6b6b; }
+    .brand { font-size: 13px; fill: #8a6a24; }
+    .br  { font-size: 12px; fill: #9a9a9a; }
+    .cell { fill: #fbfaf6; stroke: #ddd6c6; stroke-width: 1; }
+    .lbl { font-size: 19px; font-weight: 700; }
+    .ctr { font-size: 20px; font-weight: 700; }
+  </style>
+  <rect x="0" y="0" width="800" height="900" fill="#ffffff"/>
+
+  <text class="h" x="40" y="54" fill="#1f4a3f">火鈴夾命，在盤面上長什麼樣？</text>
+  <text class="t2" x="40" y="84" fill="#4a4a4a">夾＝火星、鈴星分在命宮前後兩宮，一邊一顆；最容易看錯的是轉角</text>
+
+  <!-- 左盤：古書注例 命寅、火丑、鈴卯（格位同本軟體盤面：寅左下角、丑在其右、卯在其上） -->
+  <rect class="cell" x="40" y="110" width="85" height="64"/>
+  <rect class="cell" x="125" y="110" width="85" height="64"/>
+  <rect class="cell" x="210" y="110" width="85" height="64"/>
+  <rect class="cell" x="295" y="110" width="85" height="64"/>
+  <rect class="cell" x="40" y="174" width="85" height="64"/>
+  <rect class="cell" x="295" y="174" width="85" height="64"/>
+  <rect class="cell" x="295" y="238" width="85" height="64"/>
+  <rect class="cell" x="210" y="302" width="85" height="64"/>
+  <rect class="cell" x="295" y="302" width="85" height="64"/>
+  <text class="br" x="118" y="166" text-anchor="end">巳</text>
+  <text class="br" x="203" y="166" text-anchor="end">午</text>
+  <text class="br" x="288" y="166" text-anchor="end">未</text>
+  <text class="br" x="373" y="166" text-anchor="end">申</text>
+  <text class="br" x="118" y="230" text-anchor="end">辰</text>
+  <text class="br" x="373" y="230" text-anchor="end">酉</text>
+  <text class="br" x="373" y="294" text-anchor="end">戌</text>
+  <text class="br" x="288" y="358" text-anchor="end">子</text>
+  <text class="br" x="373" y="358" text-anchor="end">亥</text>
+  <!-- 卯＝鈴星 -->
+  <rect x="40" y="238" width="85" height="64" fill="#fdf6ea" stroke="#c9a961" stroke-width="2.5"/>
+  <text class="lbl" x="82.5" y="276" text-anchor="middle" fill="#a8552f">鈴星</text>
+  <text class="br" x="118" y="294" text-anchor="end" fill="#8a6a24">卯</text>
+  <!-- 寅＝命宮 -->
+  <rect x="40" y="302" width="85" height="64" fill="#1f4a3f"/>
+  <text class="lbl" x="82.5" y="340" text-anchor="middle" fill="#f5efe3">命宮</text>
+  <text class="br" x="118" y="358" text-anchor="end" fill="#c9a961">寅</text>
+  <!-- 丑＝火星 -->
+  <rect x="125" y="302" width="85" height="64" fill="#fdf6ea" stroke="#c9a961" stroke-width="2.5"/>
+  <text class="lbl" x="167.5" y="340" text-anchor="middle" fill="#a8552f">火星</text>
+  <text class="br" x="203" y="358" text-anchor="end" fill="#8a6a24">丑</text>
+  <!-- 左盤中宮 -->
+  <text class="cap" x="210" y="214" text-anchor="middle" fill="#8a6a24">古書注例</text>
+  <text class="ctr" x="210" y="244" text-anchor="middle" fill="#1f4a3f">命宮在寅</text>
+  <text class="cap" x="210" y="270" text-anchor="middle">火在丑、鈴在卯</text>
+
+  <!-- 右盤：命宮在申，夾它的是未、酉 -->
+  <rect class="cell" x="420" y="110" width="85" height="64"/>
+  <rect class="cell" x="505" y="110" width="85" height="64"/>
+  <rect class="cell" x="420" y="174" width="85" height="64"/>
+  <rect class="cell" x="420" y="238" width="85" height="64"/>
+  <rect class="cell" x="675" y="238" width="85" height="64"/>
+  <rect class="cell" x="420" y="302" width="85" height="64"/>
+  <rect class="cell" x="505" y="302" width="85" height="64"/>
+  <rect class="cell" x="590" y="302" width="85" height="64"/>
+  <rect class="cell" x="675" y="302" width="85" height="64"/>
+  <text class="br" x="498" y="166" text-anchor="end">巳</text>
+  <text class="br" x="583" y="166" text-anchor="end">午</text>
+  <text class="br" x="498" y="230" text-anchor="end">辰</text>
+  <text class="br" x="498" y="294" text-anchor="end">卯</text>
+  <text class="br" x="753" y="294" text-anchor="end">戌</text>
+  <text class="br" x="498" y="358" text-anchor="end">寅</text>
+  <text class="br" x="583" y="358" text-anchor="end">丑</text>
+  <text class="br" x="668" y="358" text-anchor="end">子</text>
+  <text class="br" x="753" y="358" text-anchor="end">亥</text>
+  <!-- 未＝火／鈴 -->
+  <rect x="590" y="110" width="85" height="64" fill="#fdf6ea" stroke="#c9a961" stroke-width="2.5"/>
+  <text class="lbl" x="632.5" y="148" text-anchor="middle" fill="#a8552f">火／鈴</text>
+  <text class="br" x="668" y="166" text-anchor="end" fill="#8a6a24">未</text>
+  <!-- 申＝命宮 -->
+  <rect x="675" y="110" width="85" height="64" fill="#1f4a3f"/>
+  <text class="lbl" x="717.5" y="148" text-anchor="middle" fill="#f5efe3">命宮</text>
+  <text class="br" x="753" y="166" text-anchor="end" fill="#c9a961">申</text>
+  <!-- 酉＝火／鈴 -->
+  <rect x="675" y="174" width="85" height="64" fill="#fdf6ea" stroke="#c9a961" stroke-width="2.5"/>
+  <text class="lbl" x="717.5" y="212" text-anchor="middle" fill="#a8552f">火／鈴</text>
+  <text class="br" x="753" y="230" text-anchor="end" fill="#8a6a24">酉</text>
+  <!-- 右盤中宮 -->
+  <text class="cap" x="590" y="214" text-anchor="middle" fill="#8a6a24">轉錄本作「寅申」</text>
+  <text class="ctr" x="590" y="244" text-anchor="middle" fill="#1f4a3f">命宮在申</text>
+  <text class="cap" x="590" y="270" text-anchor="middle">要看未、酉兩宮</text>
+
+  <!-- 兩盤說明 -->
+  <text class="t2" x="210" y="394" text-anchor="middle" fill="#4a4a4a">丑在右、卯在上：畫面上不像左右夾，</text>
+  <text class="t2" x="210" y="416" text-anchor="middle" fill="#4a4a4a">沿十二宮次序卻正好一前一後。</text>
+  <text class="t2" x="590" y="394" text-anchor="middle" fill="#4a4a4a">命宮換到申，夾它的是未和酉，</text>
+  <text class="t2" x="590" y="416" text-anchor="middle" fill="#4a4a4a">不能沿用丑、卯那一組。</text>
+
+  <line x1="40" y1="440" x2="760" y2="440" stroke="#e5e0d3" stroke-width="1"/>
+
+  <!-- 數字 -->
+  <text class="big" x="40" y="522" fill="#1f4a3f">2.1%</text>
+  <text class="st" x="172" y="482" fill="#1f4a3f">大約每 48 張盤，就有 1 張是火鈴夾命</text>
+  <text class="sm" x="172" y="508" fill="#4a4a4a">1902–2099 年每一天 × 十二時辰（子時分早晚，共 13 格）× 男女，</text>
+  <text class="sm" x="172" y="528" fill="#4a4a4a">共 1,880,294 張全跑過，火鈴夾命 39,476 張。</text>
+  <text class="sm" x="172" y="548" fill="#4a4a4a">這只回答「多常見」，不回答「敗局準不準」。</text>
+
+  <!-- 自己查三步 -->
+  <rect x="40" y="572" width="720" height="160" rx="10" fill="#f5efe3"/>
+  <text class="st" x="64" y="606" fill="#1f4a3f">自己查：三步</text>
+  <text class="t2" x="64" y="640" fill="#4a4a4a">① 找到命宮</text>
+  <text class="t2" x="64" y="668" fill="#4a4a4a">② 沿十二宮次序，找它前後緊鄰的兩宮（在轉角要轉彎）</text>
+  <text class="t2" x="64" y="696" fill="#4a4a4a">③ 兩宮一邊一顆火星、鈴星，才叫「夾」；坐命、會照都不算</text>
+
+  <text class="st" x="40" y="776" fill="#1f4a3f">位置對了只是第一步：同一條小注還寫著「吉多尚可」。</text>
+
+  <line x1="40" y1="796" x2="760" y2="796" stroke="#e5e0d3" stroke-width="1"/>
+  <text class="cap" x="40" y="820">示意圖，非個人命盤。古書例：明南陽堂刊《新鋟希夷陳先生紫微斗數全書》七卷本卷五，同條小注。</text>
+  <text class="cap" x="40" y="840">統計：本軟體格局稀有度表（引擎預設派別，2026-09-18 掃描）。</text>
+  <text class="brand" x="760" y="876" text-anchor="end">星鑑｜紫微斗數筆記　starjian.tw</text>
+</svg>

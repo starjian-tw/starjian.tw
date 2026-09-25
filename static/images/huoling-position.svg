@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="840" viewBox="0 0 1000 840" role="img" aria-labelledby="title desc">
+  <title id="title">火鈴夾命：先看位置，再看條件</title>
+  <desc id="desc">上半將相鄰三宮攤開：火星與鈴星在兩側，命宮在中間，兩顆星的位置可以對調。下半示意火星坐在命宮內，是坐命，不能只憑這一項稱為火鈴夾命。此圖不是完整命盤。</desc>
+  <style>
+    text { font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #1f4a3f; }
+    .title { font-size: 34px; font-weight: 700; }
+    .h { font-size: 26px; font-weight: 700; }
+    .body { font-size: 22px; }
+    .small { font-size: 19px; fill: #626b65; }
+    .light { fill: #f5efe3; }
+    .gold { fill: #c9a961; }
+  </style>
+  <rect width="1000" height="840" fill="#f5efe3"/>
+  <text class="title" x="55" y="65">火鈴夾命：先看位置，再看條件</text>
+  <text class="small" x="55" y="105">將相鄰宮位攤開來看｜概念示意，非個人命盤</text>
+  <rect x="45" y="135" width="910" height="310" rx="20" fill="#ffffff"/>
+  <text class="h" x="75" y="180">夾命：命宮在中間，火鈴分居兩側鄰宮</text>
+  <rect x="95" y="215" width="230" height="135" rx="12" fill="#f5efe3" stroke="#c9a961" stroke-width="2"/>
+  <rect x="385" y="215" width="230" height="135" rx="12" fill="#1f4a3f"/>
+  <rect x="675" y="215" width="230" height="135" rx="12" fill="#f5efe3" stroke="#c9a961" stroke-width="2"/>
+  <text class="small" x="210" y="255" text-anchor="middle">一側鄰宮</text>
+  <text class="title" x="210" y="309" text-anchor="middle">火星</text>
+  <text class="title light" x="500" y="291" text-anchor="middle">命宮</text>
+  <text class="small" x="790" y="255" text-anchor="middle">另一側鄰宮</text>
+  <text class="title" x="790" y="309" text-anchor="middle">鈴星</text>
+  <path d="M325 282H385 M615 282H675" stroke="#c9a961" stroke-width="3"/>
+  <text class="body" x="500" y="397" text-anchor="middle">沿十二宮次序相鄰；本文的位置判準允許火、鈴對調。</text>
+  <rect x="45" y="465" width="910" height="240" rx="20" fill="#ffffff"/>
+  <rect x="95" y="500" width="230" height="165" rx="12" fill="#1f4a3f"/>
+  <text class="h light" x="210" y="544" text-anchor="middle">命宮</text>
+  <line x1="120" x2="300" y1="560" y2="560" stroke="#c9a961"/>
+  <text class="title gold" x="210" y="613" text-anchor="middle">火星</text>
+  <text class="h" x="385" y="540">坐命：星曜在命宮裡</text>
+  <text class="body" x="385" y="586">這張示意只表示「火星坐命」。</text>
+  <text class="body" x="385" y="625">不能只憑這一項，稱作「火鈴夾命」。</text>
+  <text class="h" x="500" y="754" text-anchor="middle">符合位置條件，還不等於人生已被判定。</text>
+  <text class="small" x="500" y="801" text-anchor="middle">星鑑 StarJian · starjian.tw</text>
+</svg>
