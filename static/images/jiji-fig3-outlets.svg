@@ -23,12 +23,12 @@
   <circle cx="150" cy="320" r="78" fill="#7a6a55"/>
   <text class="star" x="150" y="312" text-anchor="middle">巨門</text>
   <text class="star-s" x="150" y="340" text-anchor="middle">表達・研究・說明</text>
-  <!-- merge -->
-  <path class="arrow" d="M 228 150 C 300 190, 300 210, 350 225"/>
-  <path class="arrow" d="M 228 300 C 300 260, 300 240, 350 225"/>
+  <!-- merge：箭頭停在字塊左側、出口線從字塊右側起，不壓字 -->
+  <path class="arrow" d="M 228 150 C 290 185, 295 215, 336 225"/>
+  <path class="arrow" d="M 228 300 C 290 265, 295 235, 336 225"/>
   <text class="mid" x="410" y="205" text-anchor="middle">把解得開的問題</text>
-  <text class="mid" x="410" y="230" text-anchor="middle">整理成別人用得懂的東西</text>
-  <text class="mid" x="410" y="255" text-anchor="middle">→</text>
+  <text class="mid" x="410" y="230" text-anchor="middle">整理成別人</text>
+  <text class="mid" x="410" y="255" text-anchor="middle">用得懂的東西</text>
   <!-- outlets -->
   <rect class="box" x="560" y="40" width="200" height="80" rx="12"/>
   <text class="box-t" x="660" y="74" text-anchor="middle">文件</text>
@@ -42,9 +42,9 @@
   <rect class="box" x="560" y="340" width="200" height="80" rx="12"/>
   <text class="box-t" x="660" y="374" text-anchor="middle">教學</text>
   <text class="box-s" x="660" y="400" text-anchor="middle">回答問題、帶人上手</text>
-  <path class="arrow" d="M 470 230 C 520 230, 520 80, 555 80"/>
-  <path class="arrow" d="M 470 230 C 520 230, 520 180, 555 180"/>
-  <path class="arrow" d="M 470 230 C 520 230, 520 280, 555 280"/>
-  <path class="arrow" d="M 470 230 C 520 230, 520 380, 555 380"/>
+  <path class="arrow" d="M 482 230 C 525 230, 520 80, 555 80"/>
+  <path class="arrow" d="M 482 230 C 525 230, 520 180, 555 180"/>
+  <path class="arrow" d="M 482 230 C 525 230, 520 280, 555 280"/>
+  <path class="arrow" d="M 482 230 C 525 230, 520 380, 555 380"/>
   <text class="cap" x="400" y="445" text-anchor="middle">圖 3｜象義放進工程背景後的作者推論，不是古籍引文。</text>
 </svg>
