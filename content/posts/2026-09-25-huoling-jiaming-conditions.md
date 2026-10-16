@@ -3,6 +3,7 @@ title: "火鈴夾命就一定是敗局？先看清「夾」的條件"
 date: 2026-09-25T09:20:00+08:00
 draft: false
 description: "火鈴夾命的「夾」，和火星坐命、三方四正見火鈴不同。回到《紫微斗數全書》的位置注例與「吉多尚可」，分清格局名稱、附帶條件與人生判語。"
+images: ["/images/og/2026-09-25-huoling-jiaming-conditions.png"]
 tags: ["火鈴夾命", "火星", "鈴星", "格局", "判語出處"]
 slug: "huoling-jiaming-conditions"
 ---

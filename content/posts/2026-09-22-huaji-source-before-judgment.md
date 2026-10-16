@@ -3,6 +3,7 @@ title: "化忌怎麼看：生年、大限、流年與自化，先分清來源"
 date: 2026-09-22T09:40:54+08:00
 draft: false
 description: "看到化忌，先確認哪個天干引動、哪顆星化忌，以及正在讀哪一層盤。分清生年、大限、流年四化與宮干自化，也分清盤面標記和人生判語。"
+images: ["/images/og/2026-09-22-huaji-source-before-judgment.png"]
 tags: ["化忌", "生年四化", "大限四化", "流年四化", "自化忌", "派別差異"]
 slug: "huaji-source-before-judgment"
 ---

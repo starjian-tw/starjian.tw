@@ -1,0 +1,377 @@
+/* 星鑑品牌樣式：顏色取自 Threads 圖卡（深綠、金、米色），版面沿用 PaperMod 單欄閱讀。
+   不載入外部字型：隱私聲明只列了 GitHub Pages 與流量計數兩條對外連線，字體改用各平台內建的黑體與明體。 */
+:root {
+  --theme: #f6f7f3;
+  --entry: #ffffff;
+  --primary: #1b2823;
+  --secondary: #55605b;
+  --tertiary: #dde2d9;
+  --content: #1f2a26;
+  --code-bg: #eef1ea;
+  --border: #e4e8e0;
+  --brand: #1f4a3f;
+  --brand-strong: #163a31;
+  --on-brand: #f5efe3;
+  --gold: #765a1c;
+  --paper: #f5efe3;
+  --radius: 4px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", sans-serif;
+  --font-serif: "Noto Serif TC", "Noto Serif CJK TC", "Source Han Serif TC", "Songti TC", "PMingLiU", "MingLiU", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --theme: #0f1815;
+    --entry: #15211d;
+    --primary: #e6eae4;
+    --secondary: #a3ada7;
+    --tertiary: #2a3933;
+    --content: #d5dbd6;
+    --code-bg: #1b2a25;
+    --border: #24312c;
+    --brand: #93c6b0;
+    --brand-strong: #a9d3c1;
+    --on-brand: #0f1815;
+    --gold: #dcbd7e;
+    --paper: #1b2a25;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --theme: #0f1815;
+  --entry: #15211d;
+  --primary: #e6eae4;
+  --secondary: #a3ada7;
+  --tertiary: #2a3933;
+  --content: #d5dbd6;
+  --code-bg: #1b2a25;
+  --border: #24312c;
+  --brand: #93c6b0;
+  --brand-strong: #a9d3c1;
+  --on-brand: #0f1815;
+  --gold: #dcbd7e;
+  --paper: #1b2a25;
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.list,
+[data-theme="dark"] .list {
+  background: var(--theme);
+}
+
+/* 首頁開頭：一句大字講這站在做什麼，下面是追蹤按鈕和主題入口 */
+.first-entry.home-info {
+  min-height: 0;
+  margin-block: 40px 56px;
+}
+
+.home-info .entry-header {
+  display: block;
+  overflow: visible;
+}
+
+.home-info .entry-header h1 {
+  font-size: clamp(34px, 4.4vw, 60px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--primary);
+  text-wrap: balance;
+}
+
+.home-info .entry-content {
+  max-width: 34em;
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--content);
+}
+
+.home-info .entry-content p {
+  margin: 0;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  margin-top: 28px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: var(--on-brand);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--brand-strong);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.btn-primary:focus-visible,
+.home-topics a:focus-visible,
+.related-list a:focus-visible,
+.link-quiet:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.link-quiet {
+  color: var(--secondary);
+  font-size: 16px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.home-topics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 18px;
+  margin-top: 32px;
+  font-size: 16px;
+  color: var(--secondary);
+}
+
+.home-topics a {
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-topics a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.home-topics .count {
+  color: var(--secondary);
+  font-weight: 400;
+}
+
+/* 文章列表：拿掉細框線，用底色和頁面底色分開；摘要用正常字色 */
+.post-entry {
+  border: 0;
+  transition: background-color 0.15s ease;
+}
+
+.post-entry:hover,
+.post-entry:focus-within {
+  transform: none;
+  background: var(--code-bg);
+}
+
+[data-theme="dark"] .post-entry:hover,
+[data-theme="dark"] .post-entry:focus-within {
+  background: var(--tertiary);
+}
+
+.entry-header h2 {
+  font-size: clamp(22px, 1.4vw + 16px, 28px);
+  line-height: 1.35;
+  color: var(--primary);
+  text-wrap: balance;
+}
+
+.entry-content {
+  color: var(--content);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.entry-footer {
+  font-size: 14px;
+}
+
+/* 文章頁 */
+.post-title {
+  font-size: clamp(25px, 6.4vw, 40px);
+  line-height: 1.3;
+  color: var(--primary);
+  text-wrap: balance;
+}
+
+.post-description {
+  color: var(--content);
+}
+
+.post-meta,
+.breadcrumbs {
+  font-size: 14px;
+}
+
+.md-content h2 {
+  font-size: clamp(22px, 5.6vw, 30px);
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+.md-content h3 {
+  font-size: clamp(19px, 4.8vw, 23px);
+  line-height: 1.4;
+}
+
+details.toc {
+  border: 0;
+}
+
+.post-tags a,
+.paginav {
+  border: 0;
+}
+
+.post-tags a {
+  color: var(--content);
+}
+
+.paginav .title {
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 14px;
+}
+
+/* 古書引文：原句用明體放大、鋪米色底；引文最後一行「——出處」排成下一行的小字 */
+.md-content blockquote.quote {
+  margin: 28px 0;
+  padding: 18px 22px;
+  border-inline-start: 0;
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--primary);
+  font-family: var(--font-serif);
+  font-size: 1.12em;
+  line-height: 1.85;
+}
+
+.md-content blockquote.quote p {
+  margin: 0;
+}
+
+.md-content blockquote.quote p + p {
+  margin-top: 0.7em;
+}
+
+.md-content blockquote.quote .quote-source {
+  margin-top: 10px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--gold);
+}
+
+/* 文末：回 Threads 的入口與相關文章 */
+.post-after {
+  margin-top: 48px;
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--code-bg);
+}
+
+[data-theme="dark"] .post-after {
+  background: var(--entry);
+}
+
+.post-after-lead {
+  margin: 0 0 16px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--content);
+}
+
+.post-after-title {
+  margin: 28px 0 10px;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+.related-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.related-list a {
+  color: var(--brand);
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.related-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer,
+.top-link {
+  font-size: 13px;
+}
+
+/* 進場動態：首頁開頭依序浮上、文章卡片與文中的圖、引文、表格捲到才浮上；內文段落不動，不打斷閱讀。
+   js-motion 由 extend_head.html 加上；腳本 2.5 秒內沒接手（motion-armed）就直接顯示。 */
+@keyframes motion-failsafe {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.js-motion :is(.home-info > *, .post-entry, .post-content img, .post-content blockquote.quote, .post-content table, .post-after) {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1), background-color 0.15s ease;
+}
+
+.js-motion:not(.motion-armed) :is(.home-info > *, .post-entry, .post-content img, .post-content blockquote.quote, .post-content table, .post-after) {
+  animation: motion-failsafe 0.01s linear 2.5s forwards;
+}
+
+.js-motion :is(.home-info > *, .post-entry, .post-content img, .post-content blockquote.quote, .post-content table, .post-after).is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.js-motion .home-info > :nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.js-motion .home-info > :nth-child(3) {
+  transition-delay: 160ms;
+}
+
+.js-motion .home-info > :nth-child(4) {
+  transition-delay: 240ms;
+}
+
+@media (max-width: 480px) {
+  .post-entry {
+    padding: 18px;
+  }
+
+  .entry-header h2 {
+    font-size: 22px;
+  }
+
+  .post-after {
+    padding: 20px 18px;
+  }
+}

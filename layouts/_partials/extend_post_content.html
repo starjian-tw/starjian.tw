@@ -1,0 +1,15 @@
+{{- /* 文章讀完後：回 Threads 的入口，加上同標籤的相關文章 */ -}}
+{{- if and .IsPage (eq .Section "posts") }}
+<aside class="post-after" aria-label="讀完之後">
+  <p class="post-after-lead">Threads 上有更短的查書筆記，新文章上站也會在那邊說。</p>
+  <a class="btn-primary" href="https://www.threads.com/@starjian.tw" rel="me noopener" target="_blank">在 Threads 追蹤 @starjian.tw</a>
+  {{- with first 3 (site.RegularPages.Related .) }}
+  <h2 class="post-after-title">相關文章</h2>
+  <ul class="related-list">
+    {{- range . }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{- end }}
+  </ul>
+  {{- end }}
+</aside>
+{{- end }}

@@ -1,0 +1,32 @@
+{{- /* 進場動態：瀏覽器沒要求減少動態、也支援 IntersectionObserver 才開。
+       不用動畫函式庫（不多一條對外連線，隱私聲明不必改）；腳本沒跑起來時，brand.css 會在 2.5 秒後照樣把內容顯示出來。 */ -}}
+<script>
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches && "IntersectionObserver" in window) {
+    document.documentElement.classList.add("js-motion");
+    document.addEventListener("DOMContentLoaded", function () {
+      var targets = document.querySelectorAll(".home-info > *, .post-entry, .post-content img, .post-content blockquote.quote, .post-content table, .post-after");
+      // 頁面載得太慢、保底已經把內容顯示出來，就不再藏回去
+      if (performance.now() > 2400) {
+        targets.forEach(function (el) { el.classList.add("is-in"); });
+        document.documentElement.classList.add("motion-armed");
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        var shown = 0;
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var el = e.target;
+          if (!el.matches(".home-info > *")) {
+            el.style.transitionDelay = shown * 60 + "ms";
+            setTimeout(function () { el.style.transitionDelay = ""; }, 900);
+          }
+          el.classList.add("is-in");
+          io.unobserve(el);
+          shown++;
+        });
+      }, { rootMargin: "0px 0px -6% 0px" });
+      targets.forEach(function (el) { io.observe(el); });
+      document.documentElement.classList.add("motion-armed");
+    });
+  }
+</script>

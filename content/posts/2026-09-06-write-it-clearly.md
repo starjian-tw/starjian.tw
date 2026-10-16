@@ -4,6 +4,7 @@ date: 2026-09-06T12:00:00+08:00
 lastmod: 2026-09-06T12:00:00+08:00
 draft: false
 description: "做紫微斗數軟體的解說功能時，最在意的一件事：畫面上那句話，到底是從哪裡來的？"
+images: ["/images/og/2026-09-06-write-it-clearly.png"]
 tags: ["判語出處", "整理方法"]
 slug: "write-it-clearly"
 ---

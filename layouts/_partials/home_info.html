@@ -1,0 +1,30 @@
+{{- /* 覆寫 PaperMod：大字標題下放追蹤按鈕與主題入口，取代原本的社群圖示列 */ -}}
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content md-content">
+        {{ $opts := dict "display" "block" }}
+        {{ .Content | $.Page.RenderString $opts }}
+    </div>
+    <footer class="entry-footer home-actions">
+        <a class="btn-primary" href="https://www.threads.com/@starjian.tw" rel="me noopener" target="_blank">在 Threads 追蹤 @starjian.tw</a>
+        <a class="link-quiet" href="{{ "index.xml" | absURL }}">RSS 訂閱</a>
+    </footer>
+    {{- $topics := slice }}
+    {{- range site.Params.homeTopics }}
+    {{- with site.GetPage (printf "/tags/%s" .) }}
+    {{- $topics = $topics | append . }}
+    {{- end }}
+    {{- end }}
+    {{- with $topics }}
+    <nav class="home-topics" aria-label="依主題讀">
+        <span>從主題讀起：</span>
+        {{- range . }}
+        <a href="{{ .RelPermalink }}">{{ .Title }}<span class="count">（{{ len .Pages }}）</span></a>
+        {{- end }}
+    </nav>
+    {{- end }}
+</article>
+{{- end -}}

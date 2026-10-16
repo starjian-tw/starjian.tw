@@ -30,6 +30,8 @@ disableHugoGeneratorInject = true
   disableSpecial1stPost = true
   hideSummary = false
   comments = false
+  DateFormat = "2006-01-02"
+  homeTopics = ["判語出處", "派別差異", "案例"]
 
   [params.label]
     text = "星鑑"
@@ -44,13 +46,9 @@ disableHugoGeneratorInject = true
     disableHLJS = true
 
   [params.homeInfoParams]
-    Title = "星鑑"
+    Title = "每一句判語，都找得到出處"
     Content = """
-我在做一套紫微斗數軟體，叫「星鑑」。
-
-這裡放查書筆記、派別差異，和還沒想明白的地方。畫面上每一句判語，都應該找得到是從哪裡來的。
-
-Threads：[@starjian.tw](https://www.threads.com/@starjian.tw)
+我在做一套紫微斗數軟體，叫「星鑑」。這裡放查書筆記、派別差異，和還沒想明白的地方。
 """
 
   [[params.socialIcons]]
@@ -105,3 +103,11 @@ Threads：[@starjian.tw](https://www.threads.com/@starjian.tw)
 [services]
   [services.googleAnalytics]
     id = ""
+
+[related]
+  includeNewer = true
+  threshold = 30
+  toLower = false
+  [[related.indices]]
+    name = "tags"
+    weight = 100

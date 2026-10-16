@@ -1,0 +1,20 @@
+{{- /* 覆寫 PaperMod：按日期找前後篇，標成「上一篇（較早）／下一篇（較新）」，不沿用列表分頁的「上一頁／下一頁」 */ -}}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- if and (gt (len $pages) 1) (in $pages . ) }}
+{{- $older := first 1 (where $pages "Date" "lt" .Date).ByDate.Reverse }}
+{{- $newer := first 1 (where $pages "Date" "gt" .Date).ByDate }}
+<nav class="paginav">
+  {{- range $older }}
+  <a class="prev" href="{{ .Permalink }}">
+    <span class="title">← 上一篇</span>
+    <span>{{- .LinkTitle -}}</span>
+  </a>
+  {{- end }}
+  {{- range $newer }}
+  <a class="next" href="{{ .Permalink }}">
+    <span class="title">下一篇 →</span>
+    <span>{{- .LinkTitle -}}</span>
+  </a>
+  {{- end }}
+</nav>
+{{- end }}

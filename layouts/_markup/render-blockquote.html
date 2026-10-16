@@ -1,0 +1,27 @@
+{{- /* 引文最後一段若以「——」開頭，當成出處，排在原句下一行；兩種寫法都認：
+       另起一段的「> ——卷三〈談星要論〉」，和緊接原句換行的「——《紫微斗數全書》卷一〈斗數骨髓賦〉」 */ -}}
+{{- if eq .Type "alert" }}
+<blockquote class="alert alert-{{ .AlertType }}">
+  {{ .Text }}
+</blockquote>
+{{- else }}
+{{- $text := string .Text }}
+{{- $src := "" }}
+{{- $own := findRESubmatch `(?s)^(.*)<p>(——[^<]*)</p>\s*$` $text 1 }}
+{{- if $own }}
+  {{- $text = index (index $own 0) 1 }}
+  {{- $src = index (index $own 0) 2 }}
+{{- else }}
+  {{- $tail := findRESubmatch `(?s)^(.*)\n(——[^<\n]*)</p>\s*$` $text 1 }}
+  {{- if $tail }}
+    {{- $text = printf "%s</p>" (index (index $tail 0) 1) }}
+    {{- $src = index (index $tail 0) 2 }}
+  {{- end }}
+{{- end }}
+<blockquote class="quote">
+  {{ $text | safeHTML }}
+  {{- with $src }}
+  <p class="quote-source">{{ . | safeHTML }}</p>
+  {{- end }}
+</blockquote>
+{{- end }}
