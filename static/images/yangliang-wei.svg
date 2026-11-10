@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 780" width="800" height="780" role="img" aria-label="未時的十二宮示意圖。命宮在卯，太陽、天梁（本年化祿）、文昌都坐命宮，祿存在亥，是命宮的三合宮；四項都在命宮的三方四正，陽梁昌祿成立。合成命例，不對應任何當事人。">
+  <style>
+    text { font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif; }
+    .h { font-size: 30px; font-weight: 700; } .t2 { font-size: 19px; } .role { font-size: 16px; }
+    .star { font-size: 22px; font-weight: 700; } .ctr { font-size: 30px; font-weight: 700; }
+    .c2 { font-size: 20px; } .cap { font-size: 16px; fill: #6b6b6b; } .brand { font-size: 14px; fill: #8a6a24; }
+  </style>
+  <rect x="0" y="0" width="800" height="780" fill="#ffffff"/>
+  <text class="h" x="40" y="62" fill="#1f4a3f">未時：四項條件都在三方四正</text>
+  <text class="t2" x="40" y="100" fill="#4a4a4a">合成命例｜1952 年 11 月 10 日未時（13:00–14:59）・女命</text>
+  <rect x="40" y="150" width="180" height="120" fill="#fbfaf6" stroke="#ddd6c6" stroke-width="1"/>
+  <rect x="220" y="150" width="180" height="120" fill="#fbfaf6" stroke="#ddd6c6" stroke-width="1"/>
+  <rect x="580" y="150" width="180" height="120" fill="#fbfaf6" stroke="#ddd6c6" stroke-width="1"/>
+  <rect x="40" y="270" width="180" height="120" fill="#fbfaf6" stroke="#ddd6c6" stroke-width="1"/>
+  <rect x="580" y="390" width="180" height="120" fill="#fbfaf6" stroke="#ddd6c6" stroke-width="1"/>
+  <rect x="40" y="510" width="180" height="120" fill="#fbfaf6" stroke="#ddd6c6" stroke-width="1"/>
+  <rect x="220" y="510" width="180" height="120" fill="#fbfaf6" stroke="#ddd6c6" stroke-width="1"/>
+  <rect x="400" y="510" width="180" height="120" fill="#fbfaf6" stroke="#ddd6c6" stroke-width="1"/>
+  <rect x="400" y="150" width="180" height="120" fill="#fdf6ea" stroke="#c9a961" stroke-width="2.5"/>
+  <rect x="580" y="270" width="180" height="120" fill="#fdf6ea" stroke="#c9a961" stroke-width="2.5"/>
+  <rect x="580" y="510" width="180" height="120" fill="#fdf6ea" stroke="#c9a961" stroke-width="2.5"/>
+  <rect x="40" y="390" width="180" height="120" fill="#1f4a3f" stroke="#1f4a3f" stroke-width="1"/>
+  <text class="role" x="208" y="176" text-anchor="end" fill="#9a9a9a">巳</text>
+  <text class="role" x="388" y="176" text-anchor="end" fill="#9a9a9a">午</text>
+  <text class="role" x="748" y="176" text-anchor="end" fill="#9a9a9a">申</text>
+  <text class="role" x="208" y="296" text-anchor="end" fill="#9a9a9a">辰</text>
+  <text class="role" x="748" y="416" text-anchor="end" fill="#9a9a9a">戌</text>
+  <text class="role" x="208" y="536" text-anchor="end" fill="#9a9a9a">寅</text>
+  <text class="role" x="388" y="536" text-anchor="end" fill="#9a9a9a">丑</text>
+  <text class="role" x="568" y="536" text-anchor="end" fill="#9a9a9a">子</text>
+  <text class="role" x="412" y="176" fill="#8a6a24">官祿</text>
+  <text class="role" x="568" y="176" text-anchor="end" fill="#8a6a24">未</text>
+  <text class="role" x="592" y="296" fill="#8a6a24">遷移</text>
+  <text class="role" x="748" y="296" text-anchor="end" fill="#8a6a24">酉</text>
+  <text class="role" x="592" y="536" fill="#8a6a24">財帛</text>
+  <text class="role" x="748" y="536" text-anchor="end" fill="#8a6a24">亥</text>
+  <text class="star" x="592" y="566" fill="#a8552f">祿存</text>
+  <text class="role" x="52" y="416" fill="#c9a961">命宮</text>
+  <text class="role" x="208" y="416" text-anchor="end" fill="#c9a961">卯</text>
+  <text class="star" x="52" y="446" fill="#f5efe3">太陽</text>
+  <text class="star" x="52" y="474" fill="#f5efe3">天梁化祿</text>
+  <text class="star" x="52" y="502" fill="#f5efe3">文昌</text>
+  <text class="ctr" x="400" y="340" text-anchor="middle" fill="#1f4a3f">命宮在卯</text>
+  <text class="c2" x="400" y="380" text-anchor="middle" fill="#4a4a4a">金四局</text>
+  <text class="c2" x="400" y="420" text-anchor="middle" fill="#a8552f">太陽、天梁、文昌、祿都到</text>
+  <text class="ctr" x="400" y="460" text-anchor="middle" fill="#1f4a3f">成立</text>
+  <text class="t2" x="40" y="670" fill="#4a4a4a">深色＝命宮；金框＝三方四正（命宮、對宮、兩個三合宮）</text>
+  <text class="cap" x="40" y="700">只標出判定用到的四顆星；星的位置照軟體排盤結果，是示意圖，不是軟體畫面。</text>
+  <text class="cap" x="40" y="724">合成命例，不對應任何當事人。</text>
+  <text class="brand" x="760" y="754" text-anchor="end">星鑑 starjian.tw</text>
+</svg>
