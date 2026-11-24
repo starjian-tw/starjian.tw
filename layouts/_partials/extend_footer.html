@@ -20,7 +20,10 @@
   if (mine || navigator.webdriver || /bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent)) return;
   var ref = "";
   try { ref = document.referrer ? new URL(document.referrer).hostname : ""; } catch (e) {}
-  var inside = ref === location.hostname;
+  var nav = "";
+  try { nav = performance.getEntriesByType("navigation")[0].type; } catch (e) {}
+  /* 重新整理、上一頁下一頁：瀏覽器帶的來源還是第一次進來那個，照算瀏覽、不再算一次進站 */
+  var inside = ref === location.hostname || nav === "reload" || nav === "back_forward";
   var data = JSON.stringify({
     p: location.pathname, t: document.title.slice(0, 150),
     r: inside ? "" : ref, s: src.slice(0, 40),
