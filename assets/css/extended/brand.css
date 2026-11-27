@@ -391,6 +391,9 @@ details.toc {
   white-space: nowrap;
 }
 
+.geju-freq th:nth-child(2),
+.geju-freq th:nth-child(3),
+.geju-freq th:nth-child(4),
 .geju-freq td:nth-child(2),
 .geju-freq td:nth-child(3),
 .geju-freq td:nth-child(4) {
@@ -414,7 +417,7 @@ details.toc {
 
   .geju-freq tr {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 4.6em 4.4em 4.2em;
+    grid-template-columns: minmax(0, 1fr) 4.4em 5.2em 4em;
     border-bottom: 1px solid var(--border);
   }
 
