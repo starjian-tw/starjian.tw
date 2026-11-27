@@ -68,6 +68,11 @@ disableHugoGeneratorInject = true
     url = "/posts/"
     weight = 10
   [[menu.main]]
+    identifier = "geju-frequency"
+    name = "格局頻率表"
+    url = "/geju-frequency/"
+    weight = 15
+  [[menu.main]]
     identifier = "about"
     name = "關於"
     url = "/about/"

@@ -375,3 +375,70 @@ details.toc {
     padding: 20px 18px;
   }
 }
+
+/* 格局出現頻率表：前四欄不折行、數字靠右；條件欄留最小寬度，手機上整張表在框內左右捲。
+   主題把 table 設成 block，欄寬不會跟著版面縮，這裡改回 table、捲動交給外框。 */
+.geju-freq-wrap {
+  overflow-x: auto;
+}
+
+.geju-freq {
+  display: table;
+}
+
+.geju-freq th:not(:last-child),
+.geju-freq td:not(:last-child) {
+  white-space: nowrap;
+}
+
+.geju-freq td:nth-child(2),
+.geju-freq td:nth-child(3),
+.geju-freq td:nth-child(4) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 主題的 td 有 min-width:80px、表格 keep-all（只在標點斷行），長句會撐寬整欄；選擇器要壓過主題那條 */
+.md-content table.geju-freq td:last-child {
+  min-width: 10em;
+  overflow-wrap: anywhere;
+}
+
+/* 窄螢幕：每列改成兩行，上行格名與三個數字（固定欄寬才對得齊），下行成立條件佔滿寬 */
+@media (max-width: 600px) {
+  .geju-freq,
+  .geju-freq thead,
+  .geju-freq tbody {
+    display: block;
+  }
+
+  .geju-freq tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 4.6em 4.4em 4.2em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .md-content .geju-freq-wrap table.geju-freq th,
+  .md-content .geju-freq-wrap table.geju-freq td {
+    min-width: 0;
+    border: 0;
+    padding: 6px 4px;
+  }
+
+  .geju-freq th:first-child,
+  .geju-freq td:first-child {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .md-content .geju-freq-wrap table.geju-freq th:last-child,
+  .md-content .geju-freq-wrap table.geju-freq td:last-child {
+    grid-column: 1 / -1;
+    padding-top: 0;
+    color: var(--secondary);
+  }
+}
+
+.app-cta {
+  margin: 24px 0;
+}

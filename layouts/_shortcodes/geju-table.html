@@ -1,0 +1,14 @@
+{{- /* 格局出現頻率表：讀同頁資料夾裡的 geju-frequency.csv（欄位：格局,出現盤數,分母,出現頻率%,約每幾張1張,破格降級盤數,破格降級%,成立條件），同一份檔也給人下載 */ -}}
+{{- $csv := .Page.Resources.Get "geju-frequency.csv" -}}
+{{- $rows := $csv | transform.Unmarshal -}}
+<div class="geju-freq-wrap">
+<table class="geju-freq">
+<thead><tr><th>格局</th><th>出現<br>頻率</th><th>約每幾張<br>有 1 張</th><th>破格<br>降級</th><th>成立條件</th></tr></thead>
+<tbody>
+{{- range after 1 $rows }}
+<tr><td>{{ index . 0 }}</td><td>{{ index . 3 | float | lang.FormatNumber 2 }}%</td><td>{{ index . 4 }}</td><td>{{ with index . 6 }}{{ . }}%{{ else }}—{{ end }}</td><td>{{ index . 7 }}</td></tr>
+{{- end }}
+</tbody>
+</table>
+</div>
+<p><a href="{{ $csv.RelPermalink }}" download>下載完整表格（CSV，含出現盤數與分母）</a></p>
