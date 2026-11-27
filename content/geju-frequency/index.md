@@ -1,6 +1,7 @@
 ---
 title: "紫微斗數格局出現頻率表"
 url: "/geju-frequency/"
+date: 2026-11-27
 description: "142 個紫微斗數格局，在 1,880,294 張命盤裡各出現幾張，每格附一句成立條件。"
 images: ["/images/og/geju-frequency.png"]
 ShowToc: false
